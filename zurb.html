@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-with-addons.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
+    <script>
+      "use strict";
+
+      var mountNode = document.getElementById("app");
+      var NavBar = React.createClass({
+        displayName: "NavBar",
+
+        render: function render() {
+          return React.createElement(
+            "div",
+            null,
+            React.createElement(
+              "div",
+              { "className": "top-bar", id: "realEstateMenu" },
+              React.createElement(
+                "div",
+                { "className": "top-bar-left" },
+                React.createElement(
+                  "ul",
+                  { "className": "menu accordion-menu", "data-responsive-menu": "accordion", role: "tablist", "aria-multiselectable": "true", "data-accordionmenu": "pj80up-accordionmenu", "data-responsivemenu": "fbf7xa-responsivemenu" },
+                  React.createElement(
+                    "li",
+                    { "className": "menu-text", role: "menuitem" },
+                    "Interplanetary"
+                  ),
+                  React.createElement(
+                    "li",
+                    { role: "menuitem" },
+                    React.createElement(
+                      "a",
+                      { href: "#" },
+                      "One"
+                    )
+                  ),
+                  React.createElement(
+                    "li",
+                    { role: "menuitem" },
+                    React.createElement(
+                      "a",
+                      { href: "#" },
+                      "Two"
+                    )
+                  ),
+                  React.createElement(
+                    "li",
+                    { role: "menuitem" },
+                    React.createElement(
+                      "a",
+                      { href: "#" },
+                      "Three"
+                    )
+                  )
+                )
+              ),
+              React.createElement(
+                "div",
+                { "className": "top-bar-right" },
+                React.createElement(
+                  "ul",
+                  { "className": "menu" },
+                  React.createElement(
+                    "li",
+                    null,
+                    React.createElement(
+                      "a",
+                      { href: "#" },
+                      "My Account"
+                    )
+                  ),
+                  React.createElement(
+                    "li",
+                    null,
+                    React.createElement(
+                      "a",
+                      { "className": "button" },
+                      "Login"
+                    )
+                  )
+                )
+              )
+            ),
+            React.createElement(
+              "form",
+              null,
+              React.createElement(
+                "div",
+                { "className": "row" },
+                "My Project Title",
+                React.createElement(
+                  "label",
+                  null,
+                  React.createElement("input", { type: "number", value: "35" })
+                ),
+                "Should be brief, specific memorable"
+              ),
+              React.createElement(
+                "div",
+                { "className": "row" },
+                React.createElement(
+                  "label",
+                  null,
+                  "Short description",
+                  React.createElement("textarea", null),
+                  "Describe project in one tweet"
+                )
+              ),
+              React.createElement(
+                "div",
+                { "className": "row" },
+                React.createElement(
+                  "label",
+                  null,
+                  React.createElement(
+                    "select",
+                    null,
+                    React.createElement(
+                      "option",
+                      null,
+                      "Country"
+                    ),
+                    React.createElement(
+                      "option",
+                      { value: "Vietnam" },
+                      "Vietnam"
+                    ),
+                    React.createElement(
+                      "option",
+                      { value: "usa" },
+                      "USA"
+                    )
+                  )
+                )
+              ),
+              React.createElement(
+                "div",
+                { "className": "row" },
+                React.createElement(
+                  "label",
+                  null,
+                  React.createElement(
+                    "select",
+                    null,
+                    React.createElement(
+                      "option",
+                      null,
+                      "State"
+                    ),
+                    React.createElement(
+                      "option",
+                      { value: "Hanoi" },
+                      "Hanoi"
+                    ),
+                    React.createElement(
+                      "option",
+                      { value: "la" },
+                      "LA"
+                    )
+                  )
+                )
+              ),
+              React.createElement(
+                "div",
+                { "className": "row" },
+                React.createElement(
+                  "label",
+                  null,
+                  React.createElement("input", { type: "text", title: "City", placeholder: "City" })
+                )
+              )
+            ),
+            React.createElement(
+              "div",
+              { "className": "row" },
+              React.createElement(
+                "div",
+                { "className": "medium-2 medium-offset-10 columns" },
+                React.createElement("i", { "className": "fa fa-arrow-right", "area-hidden": "true" }),
+                React.createElement(
+                  "div",
+                  null,
+                  "Next"
+                )
+              )
+            )
+          );
+        }
+      });
+      ReactDOM.render(React.createElement(NavBar, null), mountNode);
+    </script>
+  </body>
+</html>
